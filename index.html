@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨Monolithic Code Alchemist Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Chemistry Bonds Background -->
+    <div class="chemistry-bonds">
+        <div class="bond-container">
+            <!-- Atoms -->
+            <div class="atom carbon-1"></div>
+            <div class="atom carbon-2"></div>
+            <div class="atom carbon-3"></div>
+            <div class="atom carbon-4"></div>
+            <div class="atom oxygen-1"></div>
+            <div class="atom oxygen-2"></div>
+            <div class="atom hydrogen-1"></div>
+            <div class="atom hydrogen-2"></div>
+            <div class="atom hydrogen-3"></div>
+            <div class="atom hydrogen-4"></div>
+            <div class="atom nitrogen-1"></div>
+            <div class="atom nitrogen-2"></div>
+            
+            <!-- Bonds -->
+            <div class="bond bond-1"></div>
+            <div class="bond bond-2"></div>
+            <div class="bond bond-3"></div>
+            <div class="bond bond-4"></div>
+            <div class="bond bond-5"></div>
+            
+            <!-- Electron Orbits -->
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            
+            <!-- Floating Molecules -->
+            <div class="molecule benzene"></div>
+            <div class="molecule water"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Monolithic Code Alchemist Studio</h1>
+            <p class="subtitle">Transform chaotic HTML monoliths into pure, elemental files</p>
+            <p class="description">✨ Pure browser magic — your code stays local, private, and protected.</p>
+            <p class="instruction-text">Upload a monolithic HTML file to separate it into clean HTML, CSS, and JavaScript files while preserving the original filename.</p>
+        </header>
+
+        <main>
+            <!-- Status Message (moved to top) -->
+            <div id="statusMessage" class="status-message hidden"></div>
+
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="card">
+                    <h2>🧪 Begin the Separation Ritual</h2>
+                    
+                    <div id="uploadArea" class="upload-area">
+                        <div class="upload-icon">⚗️</div>
+                        <h3>Drop your monolithic HTML here or browse your grimoire</h3>
+                        <p>Watch as complex incantations unravel into three perfect essences:<br>
+                        ⚡ <strong>HTML Structure</strong> • 🎨 <strong>CSS Aesthetics</strong> • 🔮 <strong>JS Animations</strong></p>
+                        <p class="magic-text"><em>The alchemy begins the moment your code touches the catalyst</em></p>
+                        <input type="file" id="fileInput" class="file-input" accept=".html">
+                    </div>
+                    
+                    <div id="fileName" class="hidden"></div>
+                    
+                    <div class="text-center">
+                        <button id="separateBtn" class="btn" disabled>Begin Alchemical Process</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="card">
+                    <h3>✨ The Art of Digital Alchemy</h3>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <h4>⚡ Instant Transmutation</h4>
+                            <p>Watch chaos transform into order in real-time</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🔒 Local Enchantment</h4>
+                            <p>All magic happens in your browser — no external spells</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🎯 Pure Elemental Output</h4>
+                            <p>Clean, separated files ready to use for your next creation</p>
+                        </div>
+                        <div class="feature">
+                            <h4>📚 Developer's Grimoire</h4>
+                            <p>Built by a witch coder who understand the magic of clean architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="statusMessage" class="status-message hidden"></div>
+
+            <!-- Results Section -->
+            <div id="previewSection" class="preview-section hidden">
+                <div class="card">
+                    <h3 class="preview-title">🔮 The Great Reveal - <span id="baseFilename"></span></h3>
+                    
+                    <div class="file-previews">
+                        <div class="file-preview-container">
+                            <h4>⚡ <span class="file-extension">HTML</span> Essence</h4>
+                            <div id="htmlPreview" class="file-preview"></div>
+                            <button class="btn download-file-btn" data-type="html">Claim HTML Essence</button>
+                        </div>
+                        
+                        <div class="file-preview-container">
+                            <h4>🎨 <span class="file-extension">CSS</span> Aura</h4>
+                            <div id="cssPreview" class="file-preview"></div>
+                            <button class="btn download-file-btn" data-type="css">Claim CSS Aura</button>
+                        </div>
+                        
+                        <div class="file-preview-container">
+                            <h4>🔮 <span class="file-extension">JS</span> Animations</h4>
+                            <div id="jsPreview" class="file-preview"></div>
+                            <button class="btn download-file-btn" data-type="js">Claim JS Animations</button>
+                        </div>
+                    </div>
+
+                    <div class="download-all-section">
+                        <p class="magic-text">Each file now contains only its pure essence, ready for your next magical creation</p>
+                        <button id="downloadAllBtn" class="btn btn-primary">Claim All Purified Elements</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Crafted for developers who dance between code and magic ✨<br>
+            <span class="footer-sub">Where every line tells a story, and every project begins with pure elements.</span></p>
+            <div class="footer-credits">
+                <p class="creator-name">Created by <strong>Farjana Alam (Nitu)</strong></p>
+                <p class="copyright">© 2025 | All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
